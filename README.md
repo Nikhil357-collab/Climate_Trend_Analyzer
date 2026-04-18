@@ -18,7 +18,44 @@ A data science project that analyzes historical climate data to identify trends,
   - Date
   - Temperature (°C)
   - Rainfall (mm)
-  - Humidity (%)
+  - Humidity (%)                                                                         ┌────────────────────┐
+                │  Climate Dataset   │
+                │   (CSV Files)      │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │ Data Cleaning      │
+                │ (Preprocessing)    │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │ Exploratory Data   │
+                │ Analysis (EDA)     │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │ Feature Engineering│
+                └─────────┬──────────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        ▼                 ▼                 ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│ Trend        │  │ Anomaly      │  │ Forecasting  │
+│ Analysis     │  │ Detection    │  │ (ARIMA/ML)   │
+└──────┬───────┘  └──────┬───────┘  └──────┬───────┘
+       └──────────────┬──────────────┘
+                      ▼
+              ┌────────────────────┐
+              │ Visualization      │
+              │ (Plots/Dashboard)  │
+              └─────────┬──────────┘
+                        ▼
+              ┌────────────────────┐
+              │ Insights & Reports │
+              └────────────────────┘
 
 ## ⚙️ Tech Stack
 - Python, Pandas, NumPy
@@ -39,3 +76,11 @@ A data science project that analyzes historical climate data to identify trends,
 - Identified increasing temperature trends
 - Detected extreme weather anomalies
 - Forecasted future climate patterns
+
+## 📌 Future Improvements
+- LSTM-based forecasting
+- Real-time API integration
+- Geo-spatial visualization
+
+## 👤 Author
+Nikhil
