@@ -5,9 +5,9 @@ from email.mime.multipart import MIMEMultipart
 
 # ---------- EMAIL ALERT ----------
 def send_email_alert(subject, message):
-    sender = os.getenv("ALERT_bhoyarnikhil115@gmail.com")           # your email
+    sender = os.getenv("ALERT_")           # your email
     password = os.getenv("ALERT_123")    # app password
-    receiver = os.getenv("ALERT_bhoyarnikhil23@gmail.com")      # receiver email
+    receiver = os.getenv("ALERT_")      # receiver email
 
     if not sender or not password or not receiver:
         print("⚠️ Email credentials not set. Skipping email alert.")
